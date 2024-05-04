@@ -1,0 +1,32 @@
+.mouse-scroll-icon {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: var(--clr-gray);
+    animation-name: scroll-icon;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 2, 2);
+    animation-delay: 0;
+    animation-direction: normal;
+    transition: .3s;
+}
+
+.mouse-scroll-icon:not(.visible) {
+    opacity: 0;
+    visibility: hidden;
+}
+
+@keyframes scroll-icon {
+    0% {
+        transform: translateY(0) translateX(-50%);
+    }
+    75% {
+        transform: translateY(-1rem) translateX(-50%);
+    }
+    100% {
+        transform: translateY(0) translateX(-50%);
+    }
+}

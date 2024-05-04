@@ -1,0 +1,21 @@
+.TitleSectSkill{
+    margin-top: 20px;
+}
+
+.subTitleSectSkill{
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.iconsDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 550px){
+    .iconsDiv{
+        justify-content: center;
+    }
+}

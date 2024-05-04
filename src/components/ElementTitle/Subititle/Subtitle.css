@@ -1,0 +1,32 @@
+
+.subtitle-element::before {
+    content: '</';
+    color: var(--clr-gray);
+    display: inline-block;
+    transition: .1s;}
+
+.subtitle-element{
+    text-transform: lowercase;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: right;
+    color: var(--clr-gray);
+    margin-top: 4rem;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: var(--ff-mono);
+    position: relative;
+    z-index: -1;
+
+}
+
+.subtitle-element::after {
+    content: '>';
+    color: var(--clr-gray);
+    display: inline-block;
+    transition: .1s;}
+
+
+
+

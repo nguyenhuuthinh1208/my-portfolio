@@ -1,0 +1,152 @@
+
+.sectionProfile{
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-block: 8rem;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+.divProfile{
+    display: flex;
+}
+
+.imgProfile{
+    background-color: var(--clr-details);
+    background-image: url('../../../public/img/noise.webp');
+    border-radius: 1rem;
+    transform: scale(.70) translateY(-1rem);
+    display: flex;
+    width: 16rem;
+    justify-content: center;
+}
+
+.imgProfile img{
+    border-radius: 1rem;
+    transform: scale(1.1);
+    width: 23rem;
+    position: relative;
+    left: 0.5rem;
+    bottom: 0.5rem;
+
+}
+
+.stateProfile{
+    font-family: var(--ff-text);
+    --tw-bg-opacity: 1;
+    background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+    color: rgb(74 222 128);
+    width: max-content;
+    --tw-border-opacity: 1;
+    font-weight: 500;
+    font-size: 1rem;
+    border: 1px solid;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    border-color: rgb(74 222 128 / var(--tw-border-opacity));
+}
+
+.title-Name{
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: var(--ff-title);
+    line-height: 1.2;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+
+}
+
+.title-Profession{
+    font-family: var(--ff-title);
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--clr-details);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.textDescrp{
+    margin-bottom: 1em;
+    font-size: 1.4rem;
+    
+}
+
+.text-span1{
+color: var(--clr-textspan1)
+}
+
+.text-span2{
+    color: var(--clr-textspan2)
+}
+.pMasInfo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+    
+
+
+
+
+
+.btnlink2-Gmal{width: 400px;}
+
+.linkInfo{
+
+    color: var(--clr-details);
+    transition: .2s;
+    text-decoration: underline;
+}
+
+
+.content-mouse{
+    position: relative;
+    padding-top: 8rem;
+}
+
+.divDescarga{
+    display: flex;
+}
+
+@media screen and (max-width: 550px){
+    .divProfile {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .text-box-description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title-Profession{
+        text-align:center;
+    } 
+    .title-Name{
+        text-align: center;
+    }
+    .textDescrp{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .textDescriptContact{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .pMasInfo{
+        justify-content: center;
+    }
+}

@@ -1,0 +1,132 @@
+header{
+
+ 
+    padding: 0.8rem 1.5rem;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    backdrop-filter: blur(10px);
+    background-image: radial-gradient(ellipse 80% 80% at 50% -20%, #7877c64d, #fff0);
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
+    box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+    --tw-ring-color: rgb(255 255 255 / .1);
+    --tw-backdrop-blur: blur(8px);
+    /*border-bottom: 1px solid var(--clr-gray-alt);*/
+  }
+  
+  
+  .nav{
+  
+      display: flex;
+      align-items: center;
+  }
+  
+  .nav-list{
+      display: flex;
+      list-style-type: none;
+      gap: 1rem;
+  }
+  
+  .nav-list a{
+  text-decoration: none;
+  }
+  
+  .content-navbar-btns{
+      display: flex;
+      align-items: flex-start;
+      width: 7rem;
+      justify-content: space-between;
+  }
+  
+  
+  
+  .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    
+    .hamburger.active .line {
+      background-color: red;
+    }
+    
+    .line {
+      width: 25px;
+      height: 3px;
+      background-color: var(--clr-text);
+      margin: 3px auto;
+      transition: background-color 0.3s ease;
+    }
+  
+    
+  
+    .close-button {
+      display: none; /* Comienza oculto por defecto */
+      background-color: transparent;
+      border: none;
+      color: var(--clr-text);
+      cursor: pointer;
+      margin-top: 10px; /* Ajusta según tus necesidades */
+      color: var(--clr-text);
+      font-family: var(--ff-text);
+      text-transform: lowercase;
+      font-size: 1.2rem;
+      transition: color .2s;
+  
+    }
+    
+  
+    
+    
+    @media screen and (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+    
+      .nav {
+          display: flex;
+          position: fixed;
+          inset: 0;
+          right: auto;
+          border-left: 2px solid var(--clr-gray-alt);
+          border-right: 2px solid var(--clr-gray-alt);
+          border-bottom: px solid var(--clr-gray-alt);
+          flex-direction: column;
+          background-color: var(--clr-bg);
+          opacity: 0;
+          visibility: hidden;
+          transform: translateX(-100%);
+          transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+          align-items: flex-start;
+      }
+    
+      .nav.active {
+          opacity: 1;
+          visibility: visible;
+          transform: translateX(0);
+          padding: 1.4rem;
+  
+      }
+  
+      .nav-list {
+          display: flex;
+          flex-direction: column; /* Cambio importante para mostrar en vertical */
+          list-style-type: none;
+          gap: 1rem;
+          margin-top: 20px; /* Ajusta según tus necesidades */
+        }
+  
+       
+         /* Mostrar el botón solo en el modo hamburguesa */
+    .hamburger.active ~ .nav.active .close-button {
+      display: block;
+    }
+  
+      }
+  
+  
+  
+  

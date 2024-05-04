@@ -1,0 +1,58 @@
+
+.move {
+   
+    position: fixed;
+    display: flex;
+    cursor: pointer;
+    right: 1.2rem;
+    margin-top: 10px;
+    bottom: 100px;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    overflow: hidden;
+  }
+  
+ 
+  .move a {
+    list-style: none;
+    position: absolute;
+    display: flex;
+    cursor: pointer;
+    right: -0.5rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50px;
+    border: 2px solid;
+    color: var(--clr-text);
+    align-content: stretch;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    z-index: 1000;
+    transform: rotate(60deg);
+    
+  }
+  
+  .move a:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    
+  }
+  
+  .move a:active {
+    transition: 0.2s;
+    transform: scale(0.8);
+    
+  }
+  
+    .rocket {
+        color: var(--clr-text);
+      position: relative;
+      margin-right: 3px;
+      top: -2px;
+      left: 2px;
+      transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+
+    }
+  

@@ -1,0 +1,42 @@
+
+.btnIndex::before {
+    content: '<';
+    color: var(--clr-gray);
+    display: inline-block;
+    transition: color .2s, transform .1s .2s;}
+
+.btnIndex{
+    color: var(--clr-text);
+    font-family: var(--ff-mono);
+    text-transform: lowercase;
+    font-size: 1.2rem;
+    transition: color .2s;
+    display: flex;
+    cursor: pointer;
+
+}
+
+
+.btnIndex::after {
+    content: '/>';
+    color: var(--clr-gray);
+    display: inline-block;
+    transition: color .2s, transform .1s .2s;}
+
+
+    @media (hover: hover) {
+        .btnIndex:hover {
+            color: var(--clr-details);
+        }
+    
+        .btnIndex:hover::before {
+            color: var(--clr-text);
+            transform: translateX(-.5rem);
+        }
+    
+        .btnIndex:hover::after {
+            color: var(--clr-text);
+            transform: translateX(.5rem);
+        }
+    }
+    

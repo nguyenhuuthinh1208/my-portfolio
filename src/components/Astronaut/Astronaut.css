@@ -1,0 +1,82 @@
+
+
+.sectionImgAstronaut{
+    display: flex;
+    height: 87px;
+    width: 0;
+    top: 34px;
+    left: 50%;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+    
+
+    .mate{
+    position: relative;
+    top: -18px;
+    animation: mater 15s infinite;
+    left: 50px;
+    z-index: 1;
+    width: 41px;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: mater;
+
+    }
+
+   .sectionImgAstronaut .astron{
+    position: relative;
+    top: 4px;
+    width: 171px;
+    }
+
+    
+
+
+
+@keyframes mater {
+    0% {
+        top: -15%;
+    }
+    
+    15% {
+        top: -15%;
+    }
+    
+    30% {
+        
+        top: 45%;
+        
+    }
+    
+    45% {
+        transform: rotate(-20deg);
+        
+        top: 8%
+        
+    }
+    
+    60% {
+        transform: rotate(16deg);
+        top: 45%;
+        
+    }
+    
+    85% {
+       
+        top: -15%;
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        top: -15%;
+    }
+    
+}

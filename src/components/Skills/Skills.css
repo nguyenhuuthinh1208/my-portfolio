@@ -1,0 +1,44 @@
+
+.skills-list {
+    align-items: center;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+
+.skill {
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+    border: 1px solid var(--clr-gray);
+    transition: .2s;
+    cursor: pointer;
+    display: flex;
+    padding-inline: 12px;
+    font-size: var(--fz-xs);
+    font-weight: 400;
+    height: 28px;
+
+    cursor: pointer;
+    height: 41px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-evenly;
+    width: auto;
+    /* padding: 12px; */
+    background-image: radial-gradient(ellipse 80% 80% at 50% -20%, #7877c64d, #fff0);
+    text-decoration: none;
+    color: var(--clr-text);
+    background-color: var(--clr-backgrounds);
+    transition: 0.5s;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+
+.skill:hover{
+    border-color: var(--clr-details);
+}

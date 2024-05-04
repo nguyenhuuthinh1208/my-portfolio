@@ -1,0 +1,36 @@
+.section-main{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-inline: 1.5rem;
+}
+
+.sect-btn-header-link{
+  display: flex;
+  padding-top: 83px;
+  justify-content: flex-end;
+  width: 100%;
+}
+.head-link-btn{
+  margin-right: 1rem;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.links-footer{
+  display: flex;
+  width: 7rem;
+  justify-content: space-evenly;
+}
+
+footer p{
+  margin-left: auto;
+  color: var(--clr-gray);
+}
+
+
+

@@ -1,0 +1,21 @@
+.link-email{
+    color: var(--clr-details);
+    transition: .2s;
+    text-decoration: none;
+}
+
+.linkedin-contactdiv{
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.linkcontactbt{
+    margin-left: 10px;
+}
+
+.textDescriptContact{
+    margin-bottom: 1em;
+    font-size: 1.4rem;
+    margin-right: 10px;
+}

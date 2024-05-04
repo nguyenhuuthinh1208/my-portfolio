@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+
+    color: var(--clr-text);
+    font-family: var(--ff-text);
+    font-size: 1.25rem;
+    font-weight: inherit;
+    background-image: radial-gradient(ellipse 80% 80% at 50% -20%, #7877c64d, #fff0);
+   /* background-attachment: fixed;*/
+    background-color: rgb(10 10 10 / var(  --tw-bg-opacity));
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+
+
+:root {
+    /* VARIABLES WHITE */
+    --ff-mono: 'DM Mono', monospace;
+    --ff-title: 'Unbounded', sans-serif;
+    --ff-text: 'Onest variable', system-ui, sans-serif;
+    --clr-textspan1:#387da9;
+    --clr-textspan2:#828430;
+    --clr-text2o: #387da9;
+    --clr-text4o:#4d7be6;
+    --clr-bg: #ececec;
+    --clr-bg-90: #ececece6;
+    --clr-text: #1c1c1c;
+    --clr-border:rgb(86 84 84 / 30%);
+    --clr-backgrounds:none;
+    --clr-gray: #bababa;
+    --clr-gray-alt: #e0e0e0;
+    --clr-details: #4d7be6;
+    --clr-colorbgrbtn:#008cff;
+    --clr-shadown-btn:none;
+    --filter-invert: none;
+   
+}
+
+/* VARIABLES DARK */
+[data-theme="dark"] {
+    --tw-text-opacity: 1;
+    --tw-bg-opacity: 1;
+    --clr-textspan1:#96a8c9;
+    --clr-textspan2:#faeca5;
+    --clr-bg: #1c1c1c;
+    --clr-bg-90: #1c1c1ce6;
+    --clr-text: #ececec;
+    --clr-backgrounds:#64646440;
+    --clr-border:rgb(86 84 84 / 30%);
+    --clr-gray: #606060;
+    --clr-gray-alt: #2d2d2d;
+    --clr-shadown-btn:#5f5e5e;
+    --filter-invert: invert(100%);
+}
+
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #6b6b6b;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--clr-bg);
+    border-radius: 10px;
+}
+
